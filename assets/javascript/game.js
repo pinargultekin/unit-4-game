@@ -12,3 +12,20 @@ var green = 0;
 //functions
 
 //Setting random numbers
+function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+randomNumber = getRandomInt(19,120);
+console.log("randomNumber is: " , randomNumber);
+
+red = getRandomInt(1,12);
+console.log("red crystal value is: " , red);
+
+blue = getRandomInt(1,12);
+console.log("blue crystal value is: " , blue);
+
+yellow = getRandomInt(1,12);
+console.log("yellow crystal value is: " , yellow);
+
+green = getRandomInt(1,12);
+console.log("green crystal value is: " , green);
