@@ -66,8 +66,20 @@ function check () {
     if ( totalScore === randomNumber){
         wins++;
         console.log("Wins: " + wins);
+        $("#wins").text(wins);
     }else if ( totalScore > randomNumber){
         losses++;
         console.log("Losses: " + losses);
+        $("#losses").text(losses);
     }
+}
+
+//reset
+function reset () {
+    totalScore= 0;
+    red = getRandomInt(1,12);
+    blue= getRandomInt(1,12);
+    yellow = getRandomInt(1,12);
+    green= getRandomInt(1,12);
+    randomNumber = getRandomInt(19,120);
 }
