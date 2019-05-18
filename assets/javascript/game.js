@@ -40,19 +40,34 @@ console.log("green crystal value is: " , green);
 $("#red").on("click", function () { 
     totalScore += red;
     console.log("total score is : " , totalScore);
+    check();
 });
 
 $("#blue").on("click", function () { 
     totalScore += blue;
     console.log("total score is : " , totalScore);
+    check();
 });
 
 $("#yellow").on("click", function () { 
     totalScore += yellow;
     console.log("total score is : " , totalScore);
+    check();
     
 });
 $("#green").on("click", function () { 
     totalScore += green;
     console.log("total score is : " , totalScore);
+    check();
 });
+
+//Final condition check to finish the game
+function check () {
+    if ( totalScore === randomNumber){
+        wins++;
+        console.log("Wins: " + wins);
+    }else if ( totalScore > randomNumber){
+        losses++;
+        console.log("Losses: " + losses);
+    }
+}
