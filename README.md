@@ -25,9 +25,9 @@ The game is built with;
 
 <a name="display"></a>
 ## Game Display
-<img src="assets/images/gem.png" alt="game-display">
+<img src="assets/images/gem.PNG" alt="game-display">
 <br>
-<img src="assets/images/gem2.png" alt="game-display">
+<img src="assets/images/gem2.PNG" alt="game-display">
 
 ### P.S.
 
