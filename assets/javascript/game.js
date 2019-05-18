@@ -40,7 +40,7 @@ console.log("green crystal value is: " , green);
 $("#red").on("click", function () { 
     totalScore += red;
     console.log("total score is : " , totalScore);
-    check();
+    check(); //check the total score if user win or lost
 });
 
 $("#blue").on("click", function () { 
@@ -64,15 +64,19 @@ $("#green").on("click", function () {
 //Final condition check to finish the game
 function check () {
     if ( totalScore === randomNumber){
+        alert("You won! Keep up the work!");
         wins++;
         console.log("Wins: " + wins);
         $("#wins").text(wins);
+        reset();
     }else if ( totalScore > randomNumber){
+        alert("You lost! Try harder next time!");
         losses++;
         console.log("Losses: " + losses);
         $("#losses").text(losses);
+        reset();
     }
-}
+   }
 
 //reset
 function reset () {
@@ -82,4 +86,5 @@ function reset () {
     yellow = getRandomInt(1,12);
     green= getRandomInt(1,12);
     randomNumber = getRandomInt(19,120);
+$("#totalScore").text(totalScore);
 }
