@@ -41,3 +41,18 @@ $("#red").on("click", function () {
     totalScore += red;
     console.log("total score is : " , totalScore);
 });
+
+$("#blue").on("click", function () { 
+    totalScore += blue;
+    console.log("total score is : " , totalScore);
+});
+
+$("#yellow").on("click", function () { 
+    totalScore += yellow;
+    console.log("total score is : " , totalScore);
+    
+});
+$("#green").on("click", function () { 
+    totalScore += green;
+    console.log("total score is : " , totalScore);
+});
